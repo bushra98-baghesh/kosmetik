@@ -89,7 +89,7 @@ const ContactForm = () => {
             <form ref={form} onSubmit={sendEmail}>
               <div className="mb-5">
                 <label
-                  for="name"
+                  htmlFor="name"
                   className="mb-3 block text-base font-medium text-[#111529]"
                 >
                   Full Name
@@ -105,7 +105,7 @@ const ContactForm = () => {
               </div>
               <div className="mb-5">
                 <label
-                  for="email"
+                  htmlFor="email"
                   className="mb-3 block text-base font-medium text-[#111529]"
                 >
                   Email Address
@@ -122,7 +122,7 @@ const ContactForm = () => {
 
               <div className="mb-5">
                 <label
-                  for="message"
+                  htmlFor="message"
                   className="mb-3 block text-base font-medium text-[#111529]"
                 >
                   Message

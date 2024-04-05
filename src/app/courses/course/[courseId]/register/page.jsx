@@ -44,7 +44,6 @@ const Register = ({ params }) => {
     getCourse(courseId);
   }, []);
 
-
   const [info, setInfo] = useState({ seats: 1, course_id: courseId });
 
   const handleOnSubmit = (e) => {
@@ -77,7 +76,6 @@ const Register = ({ params }) => {
     formdata.append("postal_code", info.postal_code);
     formdata.append("seats", "1");
     formdata.append("contract", info.contract);
-
 
     const requestOptions = {
       method: "POST",
@@ -116,12 +114,12 @@ const Register = ({ params }) => {
       </div>
     );
   }
- 
+
   return (
     <div className=" mx-auto  ">
       <div className=" backdrop-blur-2xl px-2   mx-auto pt-16 pb-2  overflow-visible flex items-center justify-center">
         <img
-          src={`${BASEURL_IMG}${courseDetails?.data?.course?.src}`}
+          src={`${BASEURL_IMG}/${courseDetails?.data?.course?.src}`}
           alt="kosmetik"
           className="  object-fill object-center max-h-[500px] rounded md shadow-lg shadow-black/30 "
         />
@@ -359,13 +357,13 @@ const Register = ({ params }) => {
             </Select>
           </div>
           <label
-            for="uploadFile1"
+            htmlFor="uploadFile1"
             className="bg-white  text-center rounded-md w-full sm:w-[360px] min-h-[160px] py-6 px-4 flex flex-col items-center justify-center cursor-pointer border-2 border-gray-200 mx-auto font-[sans-serif] m-4"
           >
             <IoMdCloudUpload size={50} className="pb-2 text-slate-600" />
             <p className="text-gray-400 font-semibold text-sm">
-              Drag & Drop or <span class="text-[#007bff]">Choose file</span> to
-              upload contract
+              Drag & Drop or <span className="text-[#007bff]">Choose file</span>{" "}
+              to upload contract
             </p>
             <input
               isRequired

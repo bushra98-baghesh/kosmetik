@@ -120,7 +120,7 @@ const Register = ({ params }) => {
     <div className=" mx-auto ">
       <div className=" backdrop-blur-2xl px-2   mx-auto pt-16 pb-2  overflow-visible flex items-center justify-center">
         <img
-          src={`${BASEURL_IMG}${packageDetails?.data?.package?.image}`}
+          src={`${BASEURL_IMG}/${packageDetails?.data?.package?.image}`}
           alt="kosmetik"
           className="  object-fill object-center max-h-[500px] rounded md shadow-lg shadow-black/30 "
         />
@@ -346,14 +346,12 @@ const Register = ({ params }) => {
             <Select
               isRequired
               onChange={(e) => {
-                setSelectedDate(e.target.value);
                 setInfo({ ...info, date_id: e.target.value });
               }}
               label="Select a Date"
               labelPlacement="inside"
               variant="bordered"
               className="max-w-md "
-              items={packageDetails?.data?.package?.dates}
             >
               {packageDetails?.data?.package?.dates?.map((date) => (
                 <SelectItem key={date.id} value={date.from_date}>
@@ -363,13 +361,13 @@ const Register = ({ params }) => {
             </Select>
           </div>
           <label
-            for="uploadFile1"
+            htmlFor="uploadFile1"
             className="bg-white  text-center rounded-md w-full sm:w-[360px] min-h-[160px] py-6 px-4 flex flex-col items-center justify-center cursor-pointer border-2 border-gray-200 mx-auto font-[sans-serif] m-4"
           >
             <IoMdCloudUpload size={50} className="pb-2 text-slate-600" />
             <p className="text-gray-400 font-semibold text-sm">
-              Drag & Drop or <span class="text-[#007bff]">Choose file</span> to
-              upload contract
+              Drag & Drop or <span className="text-[#007bff]">Choose file</span>{" "}
+              to upload contract
             </p>
             <input
               isRequired

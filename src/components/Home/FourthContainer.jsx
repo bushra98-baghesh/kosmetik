@@ -20,8 +20,8 @@ const FirstContainer = () => {
       className="w-full  py-16"
     >
       <motion.div
-        initial={{ opacity: 0.4, scale: 0.7 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ translateY: -100 }}
+        whileInView={{ translateY: 0 }}
         transition={{ duration: 1 }}
         style={{
           background: "rgba(255, 255, 255, 0.6)",

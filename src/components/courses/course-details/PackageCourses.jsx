@@ -10,8 +10,8 @@ const PackageCourses = ({ course }) => {
         <img
           src={`${BASEURL_IMG}${course.image}`}
           width="600"
-          height="600"
-          className="py-4 "
+          height="400"
+          className="py-4 max-h-[400px] "
         />
       </div>
       <Link href={`/courses/course/${course.id}`}>
@@ -19,7 +19,7 @@ const PackageCourses = ({ course }) => {
           size="md"
           className=" px-5 font-medium rounded-md bg-gradient-to-br  from-[#13052b] to-[#342557] text-white shadow-lg transition-all ease-in-out delay-150"
         >
-          view course
+          Kurs ansehen
         </Button>
       </Link>
     </div>

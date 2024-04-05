@@ -16,10 +16,9 @@ const CourseCard = ({ course, isCourse }) => {
         shadow="md"
         isPressable
         isHoverable
-        onPress={() => console.log("item pressed")}
         radius="sm"
         isFooterBlurred
-        className=" w-[300px]  h-full  hover:scale-105 mx-auto  "
+        className=" w-[300px] overflow-visible  h-full  hover:scale-105 mx-auto  "
       >
         {isCourse === false ? (
           <div className={`${styles.ribbon} ${styles["ribbon-top-right"]}`}>

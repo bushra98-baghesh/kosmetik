@@ -1,11 +1,11 @@
+"use client";
 import CourseCard from "@/components/courses/course_card/CourseCard";
-import { Navigation, A11y } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import CarouselButtons from "./CarouselButtons";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 export default function DiscountCarousel({ discountCourses }) {
   const sliderSettings = {
@@ -25,25 +25,25 @@ export default function DiscountCarousel({ discountCourses }) {
 
   return (
     <Swiper
-      className=""
+      className=" w-full "
       style={{
         "--swiper-pagination-color": "#ED4459",
         "--swiper-pagination-bullet-inactive-color": "#999999",
         "--swiper-pagination-bullet-inactive-opacity": "0.5",
         "--swiper-pagination-progressbar-size": "10px",
       }}
-      modules={[Navigation, A11y]}
+      modules={[Navigation]}
       spaceBetween={20}
       slidesPerView={3}
       breakpoints={sliderSettings}
       initialSlide={0}
     >
-      {discountCourses.map((course) => (
+      {discountCourses.courses.map((course) => (
         <SwiperSlide
           key={course.id}
-          className="flex items-center justify-center"
+          className="flex flex-col items-center justify-center relative"
         >
-          <CourseCard course={course} />
+          <CourseCard isCourse={true} course={course} />
         </SwiperSlide>
       ))}
       <CarouselButtons />

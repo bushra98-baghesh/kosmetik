@@ -24,7 +24,7 @@ const ContactForm = () => {
             icon: "success",
             title: "Email has been sent successfully",
             showConfirmButton: false,
-            timer: 2000,
+            timer: 2500,
           });
         },
         (error) => {
@@ -32,7 +32,7 @@ const ContactForm = () => {
             icon: "warning",
             title: "Failed to send email",
             showConfirmButton: false,
-            timer: 2000,
+            timer: 2500,
           });
         }
       );
@@ -44,7 +44,7 @@ const ContactForm = () => {
           <h1 className="text-white text-lg font-semibold ">
             Kontaktinformationen
           </h1>
-          <div className="w-full h-4 border-t-1  border-[#c3c3c4]  "></div>
+          <div className="w-full h-4 border-t-1  border-[#c3c3c4]/50  "></div>
           <div className="flex items-center space-x-3 text-white">
             <FaLocationDot size={15} />
             <a

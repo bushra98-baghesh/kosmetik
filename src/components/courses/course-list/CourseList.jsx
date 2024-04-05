@@ -2,11 +2,8 @@
 import { useEffect, useState } from "react";
 import CourseCard from "../course_card/CourseCard";
 import { BASEURL } from "@/components/data/BaseUrl";
-import { Spinner } from "@nextui-org/react";
 
 export default function CourseList({ category_id }) {
-  console.log(category_id);
-
   const [courseByCategoryState, setCourseByCategoryState] = useState({
     data: [],
     loading: false,

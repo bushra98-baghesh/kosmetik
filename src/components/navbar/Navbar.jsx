@@ -114,7 +114,7 @@ const Navbar = () => {
     >
       <motion.nav
         className={
-          " container max-w-6xl flex items-center justify-between m-auto py-1  px-8 "
+          " container max-w-6xl flex items-center justify-between m-auto py-2  px-8 "
         }
         initial="closed"
         animate={mobileNavOpen ? "opened" : "closed"}
@@ -122,7 +122,7 @@ const Navbar = () => {
         <div className="flex items-center justify-center  ">
           <motion.img
             variants={hideNavItemsVariant}
-            src="/images/logo.png"
+            src="/logo.ico"
             width={45}
             height={45}
             alt={"logo"}
@@ -135,7 +135,7 @@ const Navbar = () => {
           variants={hideNavItemsVariant}
           onClick={() => setMobileNavOpen(true)}
         >
-          <RiMenu2Fill className="text-[#372948]" size={30} />
+          <RiMenu2Fill className="text-[#0c0a22]" size={30} />
         </motion.div>
 
         <motion.div
@@ -159,7 +159,7 @@ const Navbar = () => {
                 onClick={() => setMobileNavOpen(!mobileNavOpen)}
                 href="/"
               >
-                Home
+                Startseite
               </Link>
             </motion.li>
             <motion.li whileTap={{ scale: 0.95 }}>
@@ -167,9 +167,9 @@ const Navbar = () => {
                 <Link
                   className="  hover:text-[#bab5fc] px-6 cursor-pointer  capitalize font-medium duration-300 transition-all ease-in-out relative after:block  after:content-[''] after:rounded-lg  after:absolute after:h-[2px] after:bg-[#938bee] after:w-full after:scale-x-0 after:hover:scale-x-[80%]  after:transition after:duration-300 after:origin-center"
                   onClick={() => setMobileNavOpen(!mobileNavOpen)}
-                  href="courses"
+                  href="/courses"
                 >
-                  Courses
+                  Kurse
                 </Link>
               </motion.div>
             </motion.li>
@@ -178,9 +178,9 @@ const Navbar = () => {
                 <Link
                   className="   hover:text-[#bab5fc] px-6 cursor-pointer  capitalize font-medium duration-300 transition-all ease-in-out relative after:block  after:content-[''] after:rounded-lg  after:absolute after:h-[2px] after:bg-[#938bee] after:w-full after:scale-x-0 after:hover:scale-x-[80%]  after:transition after:duration-300 after:origin-center"
                   onClick={() => setMobileNavOpen(!mobileNavOpen)}
-                  href="about"
+                  href="/about"
                 >
-                  About
+                  über uns
                 </Link>
               </motion.div>
             </motion.li>
@@ -189,9 +189,9 @@ const Navbar = () => {
                 <Link
                   className=" hover:text-[#bab5fc] px-6 cursor-pointer  capitalize font-medium duration-300 transition-all ease-in-out relative after:block  after:content-[''] after:rounded-lg  after:absolute after:h-[2px] after:bg-[#938bee] after:w-full after:scale-x-0 after:hover:scale-x-[80%]  after:transition after:duration-300 after:origin-center"
                   onClick={() => setMobileNavOpen(!mobileNavOpen)}
-                  href="contact"
+                  href="/contact"
                 >
-                  Contact us
+                  Kontakt
                 </Link>
               </motion.div>
             </motion.li>

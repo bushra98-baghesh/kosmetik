@@ -17,7 +17,7 @@ const getCategories = async () => {
   return res.json();
 }
 async function getDiscountCourses() {
-  const res = await fetch("https://fakestoreapi.com/products");
+  const res = await fetch(`${BASEURL}/packages-courses-discount`);
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -28,6 +28,7 @@ async function getDiscountCourses() {
 export default async function Home() {
   const DiscountCourses = await getDiscountCourses();
   const Categories = await getCategories()
+
 
   return (
     <main className="flex min-h-screen flex-col items-center">

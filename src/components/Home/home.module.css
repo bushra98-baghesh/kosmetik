@@ -76,7 +76,7 @@ animation: typing 3.5s steps(50, end) forwards, blink-border 1s infinite;
     }
 
     to {
-        width: 90%
+        width: 94%
     }
 }
 @keyframes blink-border {
@@ -86,4 +86,9 @@ animation: typing 3.5s steps(50, end) forwards, blink-border 1s infinite;
     50%, 100% {
         border-color: rgba(39, 21, 52, 1); /* Fully opaque */
     }
+}
+.dot {
+    z-index: 99;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nMScgaGVpZ2h0PScxJyBmaWxsPSdibGFjaycgLz4KPC9zdmc+");
+    background-repeat: repeat;
 }

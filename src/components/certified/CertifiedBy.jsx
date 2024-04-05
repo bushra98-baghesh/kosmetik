@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 const CertifiedBy = () => {
   return (
-    <div className="mx-auto max-w-5xl flex items-center justify-evenly my-20 z-0 px-4 mx-auto">
+    <div className=" max-w-5xl flex items-center justify-evenly my-20 z-0 px-4 mx-auto">
       <motion.img
         initial={{ translateY: -50, opacity: 0.4 }}
         whileInView={{ translateY: 0, opacity: 1 }}

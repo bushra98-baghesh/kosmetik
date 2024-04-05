@@ -16,7 +16,7 @@ const PackageDetails = ({ kit }) => {
           className="  object-fill object-center max-h-[500px] rounded md shadow-lg shadow-black/30 "
         />
       </div>
-      <h1 className="text-center my-10 max-w-xl font-medium  mx-auto text-[#251B37]">
+      <h1 className="text-center my-10 max-w-xl font-medium  mx-auto text-[#251B37] text-sm px-4">
         Wenn es sich bei diesem Kurs um einen vollständigen Bildungsweg handelt,
         umfasst er mehr als nur den Kurs für diesen Titel
       </h1>

@@ -34,7 +34,7 @@ export default function DiscountCarousel({ discountCourses }) {
       }}
       modules={[Navigation]}
       spaceBetween={20}
-      slidesPerView={3}
+      slidesPerView={1}
       breakpoints={sliderSettings}
       initialSlide={0}
     >

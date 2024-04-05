@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import HeroSection from "@/components/about/HeroSection";
 import AB_1 from "../../../public/images/AB-4.jpg";
 import AB_2 from "../../../public/images/AB-2.jpg";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -10,13 +12,18 @@ const About = () => {
       <section className="py-14 lg:py-24 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
-            <div className="img-box flex items-center justify-center">
+            <motion.div
+              initial={{ translateX: -100, opacity: 0.4 }}
+              whileInView={{ translateX: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="img-box flex items-center justify-center"
+            >
               <img
                 src={AB_1.src}
                 alt="kosmetik"
                 className="max-lg:mx-auto rounded-md"
               />
-            </div>
+            </motion.div>
             <div className="lg:pl-[100px] flex items-center">
               <div className="data w-full">
                 <h2 className="font-manrope font-bold text-xl lg:text-2xl text-black mb-9 max-lg:text-center relative">
@@ -84,13 +91,18 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="img-box ">
+            <motion.div
+              initial={{ translateX: 100, opacity: 0.4 }}
+              whileInView={{ translateX: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="img-box "
+            >
               <img
                 src={AB_2.src}
                 alt="About Us tailwind page"
                 className="hidden lg:block rounded-md"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -100,7 +112,12 @@ const About = () => {
           <h2 className="font-manrope text-2xl text-center text-gray-900 font-bold mb-14">
             Unsere Unternehmenswerte
           </h2>
-          <div className="flex flex-col gap-5 xl:gap-8 lg:flex-row lg:justify-between">
+          <motion.div
+            initial={{ translateY: 60, opacity: 0.4 }}
+            whileInView={{ translateY: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="flex flex-col gap-5 xl:gap-8 lg:flex-row lg:justify-between"
+          >
             <div className="w-full max-lg:max-w-2xl mx-auto lg:mx-0 lg:w-1/3 shadow-md shadow-black/20  bg-gradient-to-r from-fuchsia-600/40 to-purple-600/30 backdrop-blur-lg p-6 rounded-2xl">
               <div className="flex gap-5">
                 <div className="flex-1 text-center">
@@ -142,7 +159,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
       <iframe

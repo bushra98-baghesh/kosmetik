@@ -1,7 +1,9 @@
 import Coursedetails from "@/components/courses/course-details/CourseDetails";
 import { BASEURL } from "@/components/data/BaseUrl";
 async function getCourse(id) {
-  const res = await fetch(`${BASEURL}/course-with-sections/${id}`);
+  const res = await fetch(`${BASEURL}/course-with-sections/${id}`, {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");

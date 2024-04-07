@@ -76,7 +76,7 @@ animation: typing 3.5s steps(50, end) forwards, blink-border 1s infinite;
     }
 
     to {
-        width: 94%
+        width: 90%
     }
 }
 @keyframes blink-border {

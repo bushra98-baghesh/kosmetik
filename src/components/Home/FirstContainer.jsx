@@ -40,7 +40,7 @@ const FirstContainer = () => {
           <h1
             className={`${style.typed}  md:text-4xl text-2xl font-semibold text-[#06241B] mx-auto md:mx-0 `}
           >
-            German Board Institution
+            German Board Schule
           </h1>
 
           <p className=" text-sm font-medium text-[#251B37] pt-10">

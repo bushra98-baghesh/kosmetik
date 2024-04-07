@@ -1,23 +1,23 @@
 //Home Page is here
-import FirstContainer from "@/components/Home/FirstContainer"
-import SecondContainer from "@/components/Home/SecondContainer"
-import ThirdContainer from "@/components/Home/ThirdContainer"
-import FourthContainer from "@/components/Home/FourthContainer"
-import { BASEURL } from "@/components/data/BaseUrl"
+import FirstContainer from "@/components/Home/FirstContainer";
+import SecondContainer from "@/components/Home/SecondContainer";
+import ThirdContainer from "@/components/Home/ThirdContainer";
+import FourthContainer from "@/components/Home/FourthContainer";
+import { BASEURL } from "@/components/data/BaseUrl";
 
 const getCategories = async () => {
-
-  const res = await fetch(`${BASEURL}/category`);
-
+  const res = await fetch(`${BASEURL}/category`, { cache: "no-store" });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
 
   return res.json();
-}
+};
 async function getDiscountCourses() {
-  const res = await fetch(`${BASEURL}/packages-courses-discount`);
+  const res = await fetch(`${BASEURL}/packages-courses-discount`, {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
@@ -27,8 +27,7 @@ async function getDiscountCourses() {
 }
 export default async function Home() {
   const DiscountCourses = await getDiscountCourses();
-  const Categories = await getCategories()
-
+  const Categories = await getCategories();
 
   return (
     <main className="flex min-h-screen flex-col items-center">

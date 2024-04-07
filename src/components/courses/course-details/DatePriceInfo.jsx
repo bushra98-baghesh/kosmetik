@@ -5,7 +5,7 @@ import { ImFilePdf } from "react-icons/im";
 import useDownloader from "react-use-downloader";
 const DatePriceInfo = ({ course, isCourse }) => {
   const { download } = useDownloader();
-
+  console.log(course);
   const fileUrl = isCourse ? "/course.pdf" : "/package.pdf";
   const filename = isCourse ? "course-contract.pdf" : "package-contract.pdf";
 

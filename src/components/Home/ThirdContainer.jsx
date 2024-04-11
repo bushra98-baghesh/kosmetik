@@ -1,6 +1,5 @@
 "use client";
-import { Button } from "@nextui-org/react";
-import { GoArrowUpRight } from "react-icons/go";
+import Link from "next/link";
 import { motion } from "framer-motion";
 const ThirdContainer = ({ categories }) => {
   return (
@@ -21,21 +20,16 @@ const ThirdContainer = ({ categories }) => {
       <p className="font-medium text-[#6D737A]">
         Verschiedene Kategorien, um das zu finden, was Sie lernen möchten
       </p>
-      <div className=" my-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div className=" my-10 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
         {categories.map((cat, index) => {
           return (
-            <Button
+            <Link
+              href="/courses"
               key={index}
-              color="primary"
-              variant={"bordered"}
-              size="lg"
-              radius="sm"
-              className="flex items-center justify-center border-[#251B37] text-[#251B37]  shadow-md shadow-gray-400 py-6 px-2 "
+              className="flex items-center justify-center md:text-base text-sm border-1.5 border-[#251B37] font-medium text-[#392d4e]  shadow-md shadow-gray-400 py-3 rounded-sm px-2 "
             >
               <span> {cat.name}</span>
-
-              <GoArrowUpRight size={16} className="text-[#251B37]" />
-            </Button>
+            </Link>
           );
         })}
       </div>

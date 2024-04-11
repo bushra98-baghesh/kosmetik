@@ -36,12 +36,14 @@ const Footer = () => {
               <a
                 aria-label="Our phone"
                 title="Our phone"
-                className="transition-colors flex flex-col text-gray-800 duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                className="transition-colors space-y-1 flex flex-col text-gray-800 duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 <p> +4917680203257</p>
-                <p> +4917680203257</p>
-                <p> +4917680203257</p>
-                <p> +4917680203257</p>
+                <p>+4917644466088</p>
+
+                <p>+4915738922887</p>
+
+                <p>+4915566223331</p>
               </a>
             </div>
             <div className="flex items-center gap-2 font-medium  text-gray-800">

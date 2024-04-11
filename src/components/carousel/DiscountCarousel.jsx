@@ -46,6 +46,14 @@ export default function DiscountCarousel({ discountCourses }) {
           <CourseCard isCourse={true} course={course} />
         </SwiperSlide>
       ))}
+      {discountCourses.packages.map((course) => (
+        <SwiperSlide
+          key={course.id}
+          className="flex flex-col items-center justify-center relative"
+        >
+          <CourseCard isCourse={false} course={course} />
+        </SwiperSlide>
+      ))}
       <CarouselButtons />
     </Swiper>
   );

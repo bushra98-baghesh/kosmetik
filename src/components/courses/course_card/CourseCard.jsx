@@ -22,7 +22,7 @@ const CourseCard = ({ course, isCourse }) => {
       >
         {isCourse === false ? (
           <div className={`${styles.ribbon} ${styles["ribbon-top-right"]}`}>
-            <span>Package</span>
+            <span>Paket</span>
           </div>
         ) : null}
 

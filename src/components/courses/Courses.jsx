@@ -27,20 +27,27 @@ const Courses = ({ categories }) => {
           initial={{ translateY: -50, opacity: 0.4 }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="text-3xl font-medium text-[#FFEEF0] tracking-wide max-w-md text-center pt-10 "
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-[#FFEEF0] tracking-wide max-w-md text-center pt-10 px-2 "
         >
-          Zugang zu über <span className="text-4xl text-[#FFCACA]">50+ </span>
+          Zugang zu über{" "}
+          <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#FFCACA]">
+            50+{" "}
+          </span>
           Kursen von Ausbildern & German Board kosmetik Institution
         </motion.h1>
       </div>
       <div className=" flex items-center justify-center space-x-2 my-4 ">
-        <h1 className="text-[#251B37] text-2xl font-semibold">unsere</h1>
+        <h1 className="text-[#251B37] text-lg sm:text-xl md:text-2xl font-semibold">
+          unsere
+        </h1>
         <div className="flex flex-col mt-4">
-          <h1 className="text-[#6D39E9] text-3xl font-semibold">Kurse</h1>
-          <div className="ml-1 w-20 h-4 border-t-2 rounded-t-[100%] border-[#251B37] "></div>
+          <h1 className="text-[#6D39E9] text-xl sm:text-2xl md:text-3xl font-semibold">
+            Kurse
+          </h1>
+          <div className="ml-1 w-12 sm:w-16 md:w-20 h-4 border-t-2 rounded-t-[100%] border-[#6D39E9] "></div>
         </div>
       </div>
-      <h1 className="text-center text-lg font-medium">
+      <h1 className="text-center text-sm sm:text-base md:text-lg font-medium">
         Im Laufe der Jahre haben sich, manchmal zufällig, verschiedene Versionen
         entwickelt,
       </h1>

@@ -7,9 +7,18 @@ const CertifiedBy = () => {
         initial={{ translateY: -50, opacity: 0.4 }}
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
+        src="/images/Bfd.png"
+        width={100}
+        height={100}
+        alt={"Background Image"}
+      />
+      <motion.img
+        initial={{ translateY: -50, opacity: 0.4 }}
+        whileInView={{ translateY: 0, opacity: 1 }}
+        transition={{ duration: 0.4 }}
         src="/images/Azav.jpg"
-        width={80}
-        height={80}
+        width={60}
+        height={60}
         alt={"Background Image"}
       />
       <motion.img
@@ -17,8 +26,8 @@ const CertifiedBy = () => {
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.7 }}
         src="/images/logo.png"
-        width={90}
-        height={90}
+        width={70}
+        height={70}
         alt={"Background Image"}
       />
       <motion.img
@@ -26,8 +35,8 @@ const CertifiedBy = () => {
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         src="/images/ISO.png"
-        width={90}
-        height={90}
+        width={70}
+        height={70}
         alt={"Background Image"}
       />
     </div>

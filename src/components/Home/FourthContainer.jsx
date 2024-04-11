@@ -1,6 +1,7 @@
 "use client";
 import Cover from "../../../public/images/HOME.jpg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import styles from "./home.module.css";
 const FirstContainer = () => {
   return (
@@ -40,9 +41,9 @@ const FirstContainer = () => {
             {" "}
             oder{" "}
           </p>
-          <button className={styles.glow} type="button">
+          <Link href="/contact" className={styles.glow} type="button">
             kontaktiere uns jetzt
-          </button>
+          </Link>
         </div>
       </motion.div>
     </div>

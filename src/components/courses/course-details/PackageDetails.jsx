@@ -25,10 +25,10 @@ const PackageDetails = ({ kit }) => {
         <div className=" basis-7/12">
           <h1 className="text-2xl font-semibold">{packageDetails.title}</h1>
           <div className="w-full h-4 border-t-1  border-[#251B37] my-4 "></div>
-          <p className=" text-lg font-medium pb-10">
+          <p className=" text-lg font-medium max-w-md pb-10">
             {packageDetails.description}
           </p>
-          <h1 className="text-2xl font-semibold text-[#D43347] tracking-wide">
+          <h1 className="text-base sm:text-lg md:text-xl font-semibold text-[#D43347] tracking-wide">
             In diesem Track enthaltene Kurse
           </h1>
           {packageDetails.courses.map((course, index) => {

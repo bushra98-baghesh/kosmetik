@@ -3,6 +3,7 @@
 import HeroSection from "@/components/about/HeroSection";
 import AB_1 from "../../../public/images/AB-4.jpg";
 import AB_2 from "../../../public/images/AB-2.jpg";
+import AB_3 from "../../../public/images/HM-P.jpg";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -98,9 +99,9 @@ const About = () => {
               className="img-box "
             >
               <img
-                src={AB_2.src}
+                src={AB_3.src}
                 alt="About Us tailwind page"
-                className="hidden lg:block rounded-md"
+                className="hidden object-cover w-full h-full lg:block rounded-md"
               />
             </motion.div>
           </div>

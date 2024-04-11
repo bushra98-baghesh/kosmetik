@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 export default function CoursesCategories({ categories, handleCatChange }) {
   const sliderSettings = {
     240: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     440: {
@@ -50,7 +50,7 @@ export default function CoursesCategories({ categories, handleCatChange }) {
                 }}
                 size="lg"
                 radius="none"
-                className="border-[#13052b]  border-2 px-5 bg-[#f5f5f5]  text-[#13052b] font-medium rounded-sm hover:bg-gradient-to-br w-full hover:from-[#13052b] hover:to-[#342557] hover:text-white shadow-lg transition-all ease-in-out delay-150  focus:bg-gradient-to-br focus:from-[#13052b] focus:to-[#342557] focus:text-white "
+                className="border-[#13052b]  border-2 px-5 bg-[#f5f5f5]  text-[#13052b] font-medium rounded-sm hover:bg-gradient-to-br w-full hover:from-[#13052b] hover:to-[#342557] hover:text-white shadow-lg transition-all ease-in-out delay-150 text-sm md:text-base  focus:bg-gradient-to-br focus:from-[#13052b] focus:to-[#342557] focus:text-white "
               >
                 {cat.name}
               </Button>

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import HeroSection from "@/components/about/HeroSection";
-import AB_1 from "../../../public/images/AB-4.jpg";
+import AB_1 from "../../../public/images/AB-3.jpg";
 import AB_2 from "../../../public/images/AB-2.jpg";
 import AB_3 from "../../../public/images/HM-P.jpg";
 import { motion } from "framer-motion";

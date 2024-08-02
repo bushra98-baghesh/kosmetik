@@ -347,11 +347,10 @@ const Register = ({ params }) => {
               }}
               label="Select a Date"
               className="max-w-sm  "
-              items={courseDetails?.data?.course?.dates}
             >
               {courseDetails?.data?.course?.dates?.map((date) => (
                 <SelectItem key={date?.id} value={date.from_date}>
-                  {date.from_date} to {date.to_date}
+                  {date.from_date + "   ➞  " + date.to_date}
                 </SelectItem>
               ))}
             </Select>

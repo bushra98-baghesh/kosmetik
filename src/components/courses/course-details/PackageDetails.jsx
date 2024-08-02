@@ -6,7 +6,12 @@ import PackageCourses from "./PackageCourses";
 import { BASEURL_IMG } from "@/components/data/BaseUrl";
 const PackageDetails = ({ kit }) => {
   const packageDetails = kit.package;
+  const descriptionExists = packageDetails.description != null;
 
+  // Replace newline characters with <br /> tags if description exists
+  const formattedDescription = descriptionExists
+    ? packageDetails.description.replace(/\n/g, "<br />")
+    : "";
   return (
     <div className="mx-auto min-h-screen">
       <div className=" backdrop-blur-2xl px-2   mx-auto pt-16 pb-4   flex items-center justify-center">
@@ -25,9 +30,10 @@ const PackageDetails = ({ kit }) => {
         <div className=" basis-7/12">
           <h1 className="text-2xl font-semibold">{packageDetails.title}</h1>
           <div className="w-full h-4 border-t-1  border-[#251B37] my-4 "></div>
-          <p className=" text-lg font-medium max-w-md pb-10">
-            {packageDetails.description}
-          </p>
+          <p
+            className=" text-lg font-medium max-w-2xl pb-10"
+            dangerouslySetInnerHTML={{ __html: formattedDescription }}
+          ></p>
           <h1 className="text-base sm:text-lg md:text-xl font-semibold text-[#D43347] tracking-wide">
             In diesem Track enthaltene Kurse
           </h1>

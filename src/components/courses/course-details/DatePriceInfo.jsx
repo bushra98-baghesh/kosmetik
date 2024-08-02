@@ -1,11 +1,11 @@
 "use client";
 import { GoArrowRight } from "react-icons/go";
 import { FaLocationDot } from "react-icons/fa6";
-import { ImFilePdf } from "react-icons/im";
 import useDownloader from "react-use-downloader";
+import { FaFileDownload } from "react-icons/fa";
 const DatePriceInfo = ({ course, isCourse }) => {
   const { download } = useDownloader();
-  console.log(course);
+
   const fileUrl = isCourse ? "/course.pdf" : "/package.pdf";
   const filename = isCourse ? "course-contract.pdf" : "package-contract.pdf";
 
@@ -14,14 +14,18 @@ const DatePriceInfo = ({ course, isCourse }) => {
       <div className="bg-[#ED4459]/20 p-5">
         <h1 className="font-medium">Veranstaltungen</h1>
         <div className="w-full h-4 border-t-1  border-[#0D0023] my-2 "></div>
-        <div className="space-y-2 text-[#663C4E] font-medium text-sm">
+        <div className="space-y-2 text-[#0D0023] font-semibold text-sm">
           {course?.dates?.length > 0 ? (
             course.dates.map((date) => {
               return (
-                <div key={date.id} className="flex items-center gap-2">
-                  <GoArrowRight className="text-[#0D0023]" />
-                  <p className="">
-                    {date.from_date} - {date.to_date}
+                <div
+                  key={date.id}
+                  className="flex items-center justify-center "
+                >
+                  <p className="flex items-center justify-center gap-2">
+                    {date.from_date}
+                    <GoArrowRight size={15} className="text-[#0D0023]" />{" "}
+                    {date.to_date}
                   </p>
                 </div>
               );
@@ -34,9 +38,9 @@ const DatePriceInfo = ({ course, isCourse }) => {
       <div className="bg-[#ED4459]/20 p-5  ">
         <h1 className="font-medium">Trainingsvertrag</h1>
         <div className="w-full h-4 border-t-1  border-[#0D0023] my-2 "></div>
-        <div className="flex items-center gap-2 text-sm font-medium">
+        <div className="flex gap-2 text-sm font-medium">
           <button onClick={() => download(fileUrl, filename)}>
-            <ImFilePdf size={25} className="text-[#0D0023]" />
+            <FaFileDownload size={25} className="text-[#0d0023ee]" />
           </button>
           <p className="text-sm">Zur Registrierung herunterladen</p>
         </div>
@@ -45,26 +49,27 @@ const DatePriceInfo = ({ course, isCourse }) => {
         <h1 className="font-medium">Preis</h1>
         <div className="w-full h-4 border-t-1  border-[#0D0023] my-2 "></div>
         <div className="flex  gap-2 ">
-          <GoArrowRight size={22} className="text-[#0D0023]" />
+          <GoArrowRight size={18} className="text-[#0D0023] mt-1" />
           {course.discount > 0 ? (
-            <p className="text-base font-medium space-x-1">
+            <p className=" font-bold space-x-1">
               € {course.price_after_discount}{" "}
               <span className=" line-through text-sm text-red-800 ">
                 € {course.price}
               </span>{" "}
               <br />
-              plus Basic equipment
+              <span className="font-medium text-sm"> plus Basic equipment</span>
             </p>
           ) : (
-            <p className="text-sm font-medium">
-              € {course.price_after_discount} plus Basic equipment
+            <p className=" font-bold">
+              € {course.price_after_discount} <br />
+              <span className="font-medium text-sm"> plus Basic equipment</span>
             </p>
           )}
         </div>
         <h1 className="font-medium pt-8">Adresse</h1>
         <div className="w-full h-4 border-t-1  border-[#0D0023] my-2 "></div>
-        <div className="flex items-center gap-2 text-sm font-medium">
-          <FaLocationDot size={15} />
+        <div className="flex items-center gap-2  font-medium">
+          <FaLocationDot size={15} className="text-[#0D0023]" />
           <p>{course.address}</p>
         </div>
       </div>

@@ -344,6 +344,7 @@ const Register = ({ params }) => {
               }}
             />
             <Select
+              required
               isRequired
               onChange={(e) => {
                 setInfo({ ...info, date_id: e.target.value });
@@ -354,8 +355,8 @@ const Register = ({ params }) => {
               className="max-w-md "
             >
               {packageDetails?.data?.package?.dates?.map((date) => (
-                <SelectItem key={date.id} value={date.from_date}>
-                  {date.from_date} to {date.to_date}
+                <SelectItem key={date.id}>
+                  {date.from_date + "   ➞  " + date.to_date}
                 </SelectItem>
               ))}
             </Select>

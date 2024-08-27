@@ -14,8 +14,8 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_8cn1eub", "template_ozzi60g", form.current, {
-        publicKey: "Dis9ihraor05GxJUJ",
+      .sendForm("service_t4o1lvs", "template_ozzi60g", form.current, {
+        publicKey: "VwLsjM2v1geZ1gOY4",
       })
       .then(
         () => {
@@ -56,6 +56,32 @@ const ContactForm = () => {
             </a>
           </div>
           <div className="flex items-center space-x-3 text-white">
+            <FaLocationDot size={15} />
+            <a
+              href="https://maps.app.goo.gl/BFkh2a1a2tyDgs9M6"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Our address"
+              title="Our address"
+              className="text-sm"
+            >
+              Rhöndorfer Str., 50939 Köln, Germany
+            </a>
+          </div>
+          <div className="flex items-center space-x-3 text-white">
+            <FaLocationDot size={15} />
+            <a
+              href="https://maps.app.goo.gl/96mQgw5QVpcndqJo6"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Our address"
+              title="Our address"
+              className="text-sm"
+            >
+              Wolfsschlucht 10, 34117 Kassel, Germany
+            </a>
+          </div>
+          <div className="flex items-center space-x-3 text-white">
             <MdEmail size={15} />
             <a target="" className="text-sm">
               info@germanboard.org
@@ -71,13 +97,14 @@ const ContactForm = () => {
 
             <p className="text-sm ml-6">+4915738922887</p>
 
-            <p className="text-sm ml-6">+4915566223331</p>
+            <p className="text-sm ml-6">+49 15566 284647 Köln</p>
+            <p className="text-sm ml-6">+49 17655 799974 Kassel</p>
           </div>
 
           <Image
             src="/images/QR.png"
-            width={150}
-            height={150}
+            width={120}
+            height={120}
             alt={"Background Image"}
             className="mx-auto border-[#820517] p-2 border-3"
           />

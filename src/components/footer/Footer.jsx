@@ -38,12 +38,13 @@ const Footer = () => {
                 title="Our phone"
                 className="transition-colors space-y-1 flex flex-col text-gray-800 duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                <p> +4917680203257</p>
-                <p>+4917644466088</p>
+                <p>+49 17680 203257</p>
+                <p>+49 17644 466088</p>
 
-                <p>+4915738922887</p>
+                <p>+49 15738 922887</p>
 
-                <p>+4915566223331</p>
+                <p>+49 15566 284647 Köln</p>
+                <p>+49 17655 799974 Kassel</p>
               </a>
             </div>
             <div className="flex items-center gap-2 font-medium  text-gray-800">
@@ -68,6 +69,34 @@ const Footer = () => {
                 className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
                 Kreuzeskirchstraße 8, 45127 Essen, Germany
+              </a>
+            </div>
+            <div className="flex  gap-2  text-gray-800 font-medium">
+              <FaLocationDot size={12} className="mt-1 " />
+
+              <a
+                href="https://maps.app.goo.gl/BFkh2a1a2tyDgs9M6"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Our address"
+                title="Our address"
+                className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                Rhöndorfer Str., 50939 Köln, Germany
+              </a>
+            </div>
+            <div className="flex  gap-2  text-gray-800 font-medium">
+              <FaLocationDot size={12} className="mt-1 " />
+
+              <a
+                href="https://maps.app.goo.gl/96mQgw5QVpcndqJo6"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Our address"
+                title="Our address"
+                className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                Wolfsschlucht 10, 34117 Kassel, Germany
               </a>
             </div>
           </div>

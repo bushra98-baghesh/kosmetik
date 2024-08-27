@@ -8,9 +8,9 @@ const CertifiedBy = () => {
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
         src="/images/Bfd.png"
-        width={100}
-        height={100}
-        alt={"Background Image"}
+        width={110}
+        height={110}
+        alt={"BfD"}
       />
       <motion.img
         initial={{ translateY: -50, opacity: 0.4 }}
@@ -19,7 +19,7 @@ const CertifiedBy = () => {
         src="/images/Azav.jpg"
         width={60}
         height={60}
-        alt={"Background Image"}
+        alt={"Azav"}
       />
       <motion.img
         initial={{ translateY: -50, opacity: 0.4 }}
@@ -28,7 +28,7 @@ const CertifiedBy = () => {
         src="/images/logo.png"
         width={70}
         height={70}
-        alt={"Background Image"}
+        alt={"German Board"}
       />
       <motion.img
         initial={{ translateY: -50, opacity: 0.4 }}
@@ -37,7 +37,16 @@ const CertifiedBy = () => {
         src="/images/ISO.png"
         width={70}
         height={70}
-        alt={"Background Image"}
+        alt={"ISO"}
+      />
+      <motion.img
+        initial={{ translateY: -50, opacity: 0.4 }}
+        whileInView={{ translateY: 0, opacity: 1 }}
+        transition={{ duration: 1.2 }}
+        src="/images/Dakks.png"
+        width={160}
+        height={160}
+        alt={"Dakks"}
       />
     </div>
   );

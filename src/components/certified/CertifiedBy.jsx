@@ -39,7 +39,7 @@ const CertifiedBy = () => {
         height={70}
         alt={"ISO"}
       />
-      <motion.img
+      {/* <motion.img
         initial={{ translateY: -50, opacity: 0.4 }}
         whileInView={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 1.2 }}
@@ -47,7 +47,7 @@ const CertifiedBy = () => {
         width={160}
         height={160}
         alt={"Dakks"}
-      />
+      /> */}
     </div>
   );
 };

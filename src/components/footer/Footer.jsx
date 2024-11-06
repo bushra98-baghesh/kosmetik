@@ -11,9 +11,9 @@ const Footer = () => {
         <div className="grid gap-8 row-gap-6 mb-8  sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
             <Image
-              src="/images/about_logo.png"
-              width={200}
-              height={200}
+              src="/images/logo.png"
+              width={70}
+              height={70}
               alt="kosmetik"
             />
             <div className="mt-6 lg:max-w-sm">
@@ -136,7 +136,7 @@ const Footer = () => {
           <p className="text-sm text-gray-600 mx-auto">
             © Copyright 2024 German Board. All rights reserved.
           </p>
-          <p className="text-sm text-gray-600 mx-auto">
+{/*           <p className="text-sm text-gray-600 mx-auto">
             Powered By{" "}
             <a
               href="https://www.linkedin.com/in/nour-asma-649245256/"
@@ -151,7 +151,7 @@ const Footer = () => {
             >
               Eng. Bushra Mohamad
             </a>
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
